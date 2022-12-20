@@ -1,52 +1,63 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
+import axios from "axios";
 import "../style/tb.css";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
+import Sidebar from "./sidebar";
 
-class Tberita extends React.Component {
-    render(){
-        return(
-        <div className="body">
-        <div className="container">
-          <div className="nav">
-            <div className="logo">
-              <img src="./Vector1.png" alt="" />
-            </div>
-            <div className="prm">
-              <h1>Cluster Maul Hill</h1>
-            </div>
-            <div className="prof">
-              <img src="./Ellipse.png" alt="" />
-            </div>
-            <div className="us">
-              <h2> Aditya </h2>
-            </div>
+function Tberita() {
+  const [judul, setjudul] = useState();
+  const [isi, setisi] = useState();
+  async function addBerita(){
+    const tambah={
+        judul,
+        isi,
+    };
+    console.log(tambah);
+    try {
+        const result = await (await axios.post("/api/berita/tambahberita", tambah)).data;
+        window.location.href = "/berita";
+        console.log(result)
+      } catch (error) {
+        console.log(error);
+      }
+}
+  return (
+    <div className="body">
+      <div className="container">
+        <div className="sidebar">
+          <Sidebar />
+        </div>
+      </div>
+
+      <div class="conb">
+        <form>
+          <h1 class="sh">Buat Berita</h1>
+          <div class="jube">
+            <p>Judul Berita</p>
           </div>
-        </div>
-        <Link to={"/"} className="boa">Dashboard</Link>
-            <Link to={"/transaksi"} className="tr">Transaksi</Link>
-            <Link to={"/penghuni"} className="ph">Penghuni</Link>
-            <Link to={"/Pesan"} class="ps">Pesan</Link>
-            <Link to={"/Berita"} className="ber">Berita</Link>
-        <div class="conb">
-            <form action="/upload-berita" method="post">
-            <h1 class="sh">Buat Berita</h1>
-            <div class="jube">
-            <p >Judul Berita</p>
-            </div>
-            <input name="judul_berita"  type="text" class="inpn"/>
-            <div>
+          <input name="judul_berita" type="text" class="inpn" value={judul} onChange={(e)=>{setjudul(e.target.value);}}></input>
+          <div>
             <p class="isi">Isi</p>
-            </div>
-            <div>
-            <p><textarea class="inpi" name="isi_berita" rows="10" cols="30"></textarea></p>
-            </div>
-            <input type='submit' class="kirim" name='tombol' value='Upload berita' />
-            </form>
-        </div>
-        </div>
-        
-        );
-    }
+          </div>
+          <div>
+            <p>
+              <textarea
+                class="inpi"
+                name="isi_berita"
+                rows="10"
+                cols="30"
+                value={isi}
+                onChange={(e)=>{setisi(e.target.value);}}
+              ></textarea>
+            </p>
+          </div>
+          <button className="kirim" onClick={addBerita}>
+            Tambah Berita
+          </button>
+        </form>
+      </div>
+    </div>
+  );
 }
 
 export default Tberita;

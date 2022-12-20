@@ -1,44 +1,16 @@
 import React from "react";
 import { Link, } from "react-router-dom";
 import "../style/psn.css";
+import Sidebar from "./sidebar";
 
 class Pesan extends React.Component {
   render() {
     return (
       <div className="body">
         <div className="container">
-          <div className="nav">
-            <div className="logo">
-              <img src="./Vector1.png" alt="" />
+        <div className="sidebar">
+                <Sidebar/>
             </div>
-            <div className="prm">
-              <h1>Cluster Maul Hill</h1>
-            </div>
-            <div className="prof">
-              <img src="./Ellipse.png" alt="" />
-            </div>
-            <div className="us">
-              <h2> Aditya </h2>
-            </div>
-          </div>
-        </div>
-        <ul>
-            <li className="boa">
-            <Link to={"/"} className="no-type">Dashboard</Link>
-            </li>
-            <li className="tr">
-            <Link to={"/transaksi"} className="no-type">Transaksi</Link>
-            </li>
-            <li className="ph">
-            <Link to={"/penghuni"} className="no-type">Penghuni</Link>
-            </li>
-            <li className="ps">
-            <Link to={"/Pesan"} class="type">Pesan</Link>
-            </li>
-            <li className="ber">
-            <Link to={"/Berita"} className="no-type">Berita</Link>
-            </li>
-            </ul>
         <div className="head">
           <div className="sp">
             <h1> Pesan</h1>
@@ -64,6 +36,7 @@ class Pesan extends React.Component {
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }

@@ -5,33 +5,8 @@
     font-family: "Open Sans";
 }
 
-.img {
-  position: absolute;
-  width: 87px;
-  margin-left: 310px;
-  margin-top: 80px;
-}
 
-h1{
-  position: absolute;
-  width: 359px;
-  height: 42px;
-  left: 410px;
-  top: 89px;
 
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 24px;
-  color: #3159c2;
-}
-
-h2{
-  color: white;
-  font-style: normal;
-  font-size: 24px;
-}
 
 .rincian{
   position: absolute;

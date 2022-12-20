@@ -1,14 +1,14 @@
-.body{
-    width: 1440px;
+.nav {
+  position: absolute;
+  width: 192px;
+  height: 728px;
+  left: -10px;
+  top: -19px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 25px 25px 0px;
 }
-
-.container {
-  position: relative;
-  width: 1440px;
-  height: 700px;
-}
-
-
 
 .logo {
   position: absolute;
@@ -16,7 +16,7 @@
   top: 50px;
 }
 
-.prm {
+.cmh {
   position: absolute;
   width: 320px;
   height: 18px;
@@ -62,6 +62,7 @@
     
 }
 .boa {
+  list-style: none;
   text-decoration: none;
   position: absolute;
   width: 77px;
@@ -76,7 +77,16 @@
   line-height: 24px;
   /* identical to box height, or 169% */
 
+}
+
+.no-type {
+  text-decoration: none;
   color: #b3b3b3;
+}
+
+.type{
+  text-decoration: none;
+  color: #3159c2;
 }
 
 .tr {
@@ -148,121 +158,5 @@
   line-height: 24px;
   /* identical to box height, or 169% */
 
-  color: #3159c2;
+  color: #b3b3b3;
 }
-
-  .sh {
-    position: absolute;
-    width: 303px;
-    height: 24px;
-    left: 243px;
-    top: 25px;
-  
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 24px;
-    /* identical to box height, or 85% */
-  
-    color: #3159c2;
-  }
-  
-  .jube {
-    position: absolute;
-    width: 139px;
-    height: 32px;
-    left: 245px;
-    top: 90px;
-  
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    /* or 118% */
-  
-    color: #090909;
-  }
-  
-  .inpn {
-    position: absolute;
-    width: 574px;
-    height: 58px;
-    left: 245px;
-    top: 133px;
-  
-    color: #496ecb;
-    background: #d9d9d9;
-    border-radius: 10px;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    margin: 13px 0 0 -5px;
-    padding-left: 10px;
-    border-color: white;
-  }
-  
-  
-  
-  .isi {
-    position: absolute;
-    width: 139px;
-    height: 32px;
-    left: 245px;
-    top: 220px;
-  
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    /* or 118% */
-  
-    color: #090909;
-  }
-  
-  .inpi {
-    position: absolute;
-    width: 1140px;
-    height: 340px;
-    left: 245px;
-    top: 265px;
-  
-    color: #496ecb;
-    background: #d9d9d9;
-    border-radius: 10px;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    margin: 13px 0 0 -5px;
-    padding-left: 10px;
-  }
-  
-  .kirim {
-    position: absolute;
-    width: 219px;
-    height: 44px;
-    left: 1180px;
-    top: 630px;
-  
-    background: #3159c2;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.11);
-    border-radius: 25px;
-    color: white;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    margin: 13px 0 0 -5px;
-    padding-left: 10px;
-    padding-top: 8px;
-    padding-bottom: 15px;
-    border-color: white;
-  }
- 

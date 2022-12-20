@@ -1,7 +1,8 @@
 import React, {useState,useEffect}  from "react";
 import axios from "axios";
 import "../style/tpeng.css";
-
+import { Link } from "react-router-dom";
+import Sidebar from "./sidebar";
 function Tambahpenghuni(){
     const [nama, setnama] = useState();
     const [telp, settelp] = useState();
@@ -28,17 +29,9 @@ function Tambahpenghuni(){
     
         return(
             <div classNameName="container">
-                <div classNameName="nav">
-                    <img classNameName="logo" src="./img/logo.png" alt="logo"></img>
-                    <h1 classNameName="prm">Cluster Maul Hill</h1>
-                    <img classNameName="prof" src="img/Ellipse.png" alt=""></img>
-                    <h2 classNameName="us">Aditya</h2>
-                    <a href="/dashboard" classNameName="boa">Dashboard</a>
-                    <a href="/transaksi"classNameName="tr">Transaksi</a>
-                    <a href="/penghuni"classNameName="ph">Penghuni</a>
-                    <a href="https://app.crisp.chat/website/6cf840b1-2824-4046-adb9-d74aff907c1b/inbox/session_cee53073-701c-4371-8245-e2f641cbe20b/"classNameName="ps">Pesan</a>
-                    <a href="/berita"classNameName="ber">Berita</a>
-                </div>
+               <div className="sidebar">
+                <Sidebar/>
+            </div>
                 <div classNameName="con">
                     <form>
                     <h1 className="sh">Tambah Penghuni</h1>

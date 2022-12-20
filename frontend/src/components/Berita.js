@@ -1,58 +1,38 @@
-import React from "react";
+import React, {useState, useEffect} from "react"
+import axios from "axios";
 import { Link } from "react-router-dom";
 import "../style/br.css";
+import Sidebar from "./sidebar";
 
-class Berita extends React.Component {
-  render() {
+function Berita()  {
+    const [berita, setBerita] = useState([]);
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const getBerita = await (
+          await axios.get("/api/berita/getallberita")
+        ).data;
+        setBerita(getBerita);
+        console.log(getBerita);
+      } catch (error) {
+        console.log(error);
+      }
+    })();
+  }, []);
+
+  const hapusberita = (id) => {
+    axios.delete(`/api/berita/hapusberita/${id}`).then((res) => {
+      console.log(res);
+    });
+    window.location.reload();
+  };
     return (
       <div className="body">
         <div className="container">
-          <div className="nav">
-            <div className="logo">
-              <img src="./Vector1.png" alt="" />
+        <div className="sidebar">
+                <Sidebar/>
             </div>
-            <div className="prm">
-              <h1>Cluster Maul Hill</h1>
-            </div>
-            <div className="prof">
-              <img src="./Ellipse.png" alt="" />
-            </div>
-            <div className="us">
-              <h2> Aditya </h2>
-            </div>
-          </div>
-        </div>
-        <ul>
-          <li className="boa">
-          <Link to={"/"} className="no-type">
-          Dashboard
-        </Link>
-        </li>
-        <li className="tr">
-        <Link to={"/transaksi"} class="no-type">
-          Transaksi
-        </Link>
-        </li>
-        <li className="ph">
-        <Link to={"/penghuni"} class="no-type">
-          Penghuni
-        </Link>
-        </li>
-        <li className="ps">
-        <Link
-          to={"/Pesan"}
-          class="no-type"
-        >
-          Pesan
-        </Link>
-        </li>
-        <li>
-        <Link to={"/berita"} class="ber">
-          Berita
-        </Link>
-        </li>
-        </ul>
-        
         <div class="con">
           <div className="sh">
             <h1>Berita</h1>
@@ -60,7 +40,7 @@ class Berita extends React.Component {
           <div className="shh">
             <h3>Berita</h3>
           </div>
-          <Link to={"/Tberita"} class="upl">Buat Berita Baru</Link>
+          <Link to={"/Tambahberita"} class="upl">Buat Berita Baru</Link>
           <div className="table">
             <table>
               <thead>
@@ -71,9 +51,12 @@ class Berita extends React.Component {
                 </tr>
               </thead>
               <tbody>
+            {berita &&
+              berita.map((berita, index) => {
+                return(
                 <tr>
-                  <td class="usr1">1</td>
-                  <td class="usr2">Lorem Ipsum dolor sit ame</td>
+                  <td class="usr1">{index + 1}</td>
+                  <td class="usr2">{berita.judul}</td>
                   <td>
                     {" "}
                     <a class="lh">Edit</a>
@@ -82,24 +65,16 @@ class Berita extends React.Component {
                     <a class="ed">Hapus</a>
                   </td>
                 </tr>
-                <tr>
-                  <td class="usr1">1</td>
-                  <td class="usr2">Lorem Ipsum dolor sit ame</td>
-                  <td>
-                    {" "}
-                    <a class="lh">Edit</a>
-                  </td>
-                  <td>
-                    <a class="ed">Hapus</a>
-                  </td>
-                </tr>
+                )
+              })}
               </tbody>
             </table>
           </div>
         </div>
       </div>
+      </div>
     );
   }
-}
+
 
 export default Berita;

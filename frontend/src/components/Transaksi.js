@@ -1,32 +1,17 @@
 import React from "react";
 import "../style/tr.css";
+import Sidebar from "./sidebar";
+import { Link } from "react-router-dom";
 
 function Transaksi() {
   return (
     <div>
       <div className="container">
-        <div class="nav">
-          <img class="logo" src="img/Vector1.png" alt="" />
-          <h1 class="prm">Cluster Maul Hill</h1>
-          <img class="prof" src="img/Ellipse.png" alt="" />
-          <h2 class="us">Aditya</h2>
-          <a href="/dashboard" class="boa">
-            Dashboard
-          </a>
-          <a href="/transaksi" class="tr">
-            Transaksi
-          </a>
-          <a href="/penghuni" class="ph">
-            Penghuni
-          </a>
-          <a href="/" class="ps">
-            Pesan
-          </a>
-          <a href="/berita" class="ber">
-            Berita
-          </a>
+      <div className="sidebar">
+                <Sidebar/>
+            </div>
         </div>
-      </div>
+      
 
       {/* copy */}
 
