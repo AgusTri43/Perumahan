@@ -1,0 +1,360 @@
+.body{
+    width: 1440px;
+}
+
+.container {
+  position: relative;
+  width: 1440px;
+  height: 700px;
+}
+
+.nav {
+  position: absolute;
+  width: 192px;
+  height: 728px;
+  left: -10px;
+  top: -19px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 25px 25px 0px;
+}
+
+.logo {
+  position: absolute;
+  left: 60px;
+  top: 50px;
+}
+
+.prm {
+  position: absolute;
+  width: 320px;
+  height: 18px;
+  left: 20px;
+  top: 95px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 24px;
+  /* identical to box height, or 169% */
+
+  color: #3159c2;
+}
+
+.prof {
+  position: absolute;
+  width: 93px;
+  height: 93px;
+  left: 48px;
+  top: 170px;
+}
+
+.us {
+  position: absolute;
+  width: 65px;
+  height: 24px;
+  left: 60px;
+  top: 260px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13.5px;
+  line-height: 24px;
+  /* identical to box height, or 118% */
+
+  color: #000000;
+}
+.con{
+    width: 1248px;
+    
+}
+.boa {
+  text-decoration: none;
+  position: absolute;
+  width: 77px;
+  height: 24px;
+  left: 53px;
+  top: 350px;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 169% */
+
+  color: #b3b3b3;
+}
+
+.tr {
+  list-style: none;
+  text-decoration: none;
+  position: absolute;
+  width: 68px;
+  height: 24px;
+  left: 53px;
+  top: 400px;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 169% */
+
+  color: #b3b3b3;
+}
+
+.ph {
+  list-style: none;
+  text-decoration: none;
+  position: absolute;
+  width: 67px;
+  height: 24px;
+  left: 53px;
+  top: 450px;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 169% */
+
+  color: #b3b3b3;
+}
+
+.boa {
+  list-style: none;
+  position: absolute;
+  width: 42px;
+  height: 24px;
+  left: 53px;
+  top: 500px;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 169% */
+}
+
+.no-type {
+  text-decoration: none;
+  color: #b3b3b3;
+}
+
+.ps {
+  list-style: none;
+  position: absolute;
+  width: 42px;
+  height: 24px;
+  left: 53px;
+  top: 500px;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 169% */
+
+  color: #3159c2;
+}
+
+.ber {
+  list-style: none;
+  text-decoration: none;
+  position: absolute;
+  width: 43px;
+  height: 24px;
+  left: 53px;
+  top: 550px;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 169% */
+
+  /* color: #3159c2; */
+}
+
+.sh {
+  
+    position: absolute;
+    width: 303px;
+    height: 24px;
+    left: 240px;
+    top: 25px;
+  
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  
+    color: #3159c2;
+  }
+  
+  .shh {
+    position: absolute;
+    width: 76px;
+    height: 32px;
+    left: 243px;
+    top: 100px;
+  
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 118% */
+  
+    color: #090909;
+  }
+  
+  table {
+    position: absolute;
+    width: 1120px;
+    height: 220px;
+    left: 240px;
+    top: 165px;
+  }
+  
+  .up {
+    
+    width: 700px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 23px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+  
+    color: #3159c2;
+  }
+  
+  .no {
+    padding-left: 20px;
+    width: 190px;
+  }
+  
+  .name {
+    width: 450px;
+  }
+  
+  .ket{
+    width: 200px;
+  }
+  .usr1 {
+    position: absolute;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    margin-top: 35px;
+    padding-left: 30px;
+    color: #000000;
+  }
+  
+  .usr2 {
+    width: 350px;
+    margin-left: 300px;
+    margin-top: 35px;
+    position: absolute;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    
+    color: #000000;
+  }
+  
+  
+  .lh {
+    text-decoration: none;
+    position: absolute;
+    margin-top: -5px;
+    left: 830px;
+    border: white;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height */
+    padding: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+    /* white */
+  
+    color: #ffffff;
+    background: #1d4ed8;
+    border-radius: 3px;
+  }
+  
+  .ed {
+    text-decoration: none;
+    left: 600px;
+    margin-top: -5px;
+    position: absolute;
+    margin-left: 300px;
+    border: white;
+    padding: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height */
+  
+    /* white */
+  
+    color: #ffffff;
+    background: #d81d1d;
+    border-radius: 3px;
+  }
+
+  .rol {
+    position: absolute;
+    left: 600px;
+    top: 410px;
+  }
+  
+  .upl {
+    text-decoration: none;
+    border: white;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    padding-left: 30px;
+    padding-top: 5px;
+  
+    color: #ffffff;
+    position: absolute;
+    width: 180px;
+    height: 34px;
+    left: calc(50% - 206px / 2 + 500px);
+    top: 110px;
+  
+    background: #3159c2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.11);
+    border-radius: 25px;
+  }
