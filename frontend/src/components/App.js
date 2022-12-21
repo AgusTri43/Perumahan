@@ -1,5 +1,7 @@
 import React from "react";
-import Dashboard from "./Dashboard"
+import LoginUser from "./LoginUser";
+import LoginAdmin from "./LoginAdmin";
+import Dashboard from "./Dashboard";
 import Berita from "./Berita"
 import Tberita from "./Tberita"
 import Eberita from "./Eberita"
@@ -11,12 +13,15 @@ import Transaksi from "./Transaksi";
 import Editpenghuni from "./editpenghuni";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
+
 function App() {
   return(
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/Dashboard" element={<Dashboard/>}/>
+        <Route path="/" element={<LoginUser/>}/>
+          <Route path="/loginadmin" element={<LoginAdmin/>}/>
+          <Route path="/dashboard" element={<Dashboard/>}/>
           <Route path="/transaksi" element={<Transaksi/>}/>
           <Route path="/penghuni" element={<Penghuni />} />
           <Route path="/tagihan" element={<Tagihan/>}/>
