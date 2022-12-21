@@ -2,6 +2,7 @@ import React from "react";
 import LoginUser from "./LoginUser";
 import LoginAdmin from "./LoginAdmin";
 import Dashboard from "./Dashboard";
+import beranda from "./beranda";
 import Berita from "./Berita"
 import Tberita from "./Tberita"
 import Eberita from "./Eberita"
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<LoginUser/>}/>
           <Route path="/loginadmin" element={<LoginAdmin/>}/>
           <Route path="/dashboard" element={<Dashboard/>}/>
+          <Route path="/beranda" element={<beranda/>}/>
           <Route path="/transaksi" element={<Transaksi/>}/>
           <Route path="/penghuni" element={<Penghuni />} />
           <Route path="/tagihan" element={<Tagihan/>}/>

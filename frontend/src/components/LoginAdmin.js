@@ -28,15 +28,15 @@ function LoginAdmin (){
 return (
     <>
        
-        <img className="wave" src="/wave.png" alt= ""/>
+        <img className="wave" src="./wave.png" alt= ""/>
         <div class="container">
             <div className="img">
-                <img src="/login.png" alt=""/>
+                <img src="./login.png" alt=""/>
             </div>
             <div className="login-container">
                 
                 <form action="/" method="post">
-                    <h2 className="title">LOG IN</h2>
+                    <h2 className="title">LOG IN ADMIN</h2>
                     <div className="input-div one focus">
                     <div className="i">
                             <i className="fas fa-user"></i>
