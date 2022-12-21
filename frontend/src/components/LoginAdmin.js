@@ -18,8 +18,7 @@ function LoginAdmin (){
             
             const result = (await axios.post("/api/users/login", user)).data;
             
-            localStorage.setItem("curentUser", JSON.stringify(result));
-            window.location.href ="/";
+            
         } catch (error) {
            console.log(error)
         }

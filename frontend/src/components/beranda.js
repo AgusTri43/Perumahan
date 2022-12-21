@@ -1,7 +1,25 @@
-import React from "react";
-import "./beranda.css"
+import React, {useState, useEffect} from "react"
+import axios from "axios";
+import { Link } from "react-router-dom";
+import "../style/beranda.css"
 
 function Login (){
+    const [berita, setBerita] = useState([]);
+
+    useEffect(() => {
+        (async () => {
+          try {
+            const getBerita = await (
+              await axios.get("/api/berita/getallberita")
+            ).data;
+            setBerita(getBerita);
+            console.log(getBerita);
+          } catch (error) {
+            console.log(error);
+          }
+        })();
+      }, []);
+    
 return (
     <>
         <header>
@@ -24,8 +42,17 @@ return (
                         <li className="d-flex no-block card-body border-top">
                             <i className="fa fa-plus w-30px m-t-5"></i>
                             <div>
-                                <p className="m-b-0 font-medium p-0" data-abc="true">judul</p>
-                                <span className="text">berita</span>
+                                {berita&&
+                                berita.map((berita,index) => {
+                                    return(
+                                        <>
+                                                <p className="m-b-0 font-medium p-0" data-abc="true">judul</p>
+                                                 <span className="text">berita</span>
+                                        </>
+                                    )
+                                })}
+                                
+
                             </div>
                         </li>
                     </ul>
